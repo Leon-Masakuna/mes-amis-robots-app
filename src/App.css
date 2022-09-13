@@ -56,20 +56,22 @@ img{
   height: 180px;
 }
 
-img:hover{
+/* img:hover{
   width: 200px;
   height: 200px;
-}
+} */
 
 .img-items{
    width:250px;
    border-radius: 5px;
    background:#8BF4CE;
+   transition: transform 0.25s ease-out;
 }
 .img-items:hover{
   background: #FFA100;
-  width: 270px;
-  height: 330px;
+  transform: scale(1.05);
+  object-fit: cover;
+  text-align: center;
   cursor: pointer;
 }
 h3, h4{
