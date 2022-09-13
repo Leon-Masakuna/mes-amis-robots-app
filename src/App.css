@@ -1,0 +1,81 @@
+main {
+  text-align: center;
+  /*vertical-align: center;
+  line-height: 100vh*/
+}
+
+.app-title{
+  text-align: center;
+  font-family: "SEGA LOGO FONT";
+  color:aqua;
+  font-size: 48px;
+  font-weight: 400;
+}
+
+body{
+  background: linear-gradient(to left, #1C0054, #00817E );
+/*   background: linear-gradient( 90deg, #364cec 0%, rgba(142, 217, 235, 0.85) 99.84%); */
+  height: 30cm;
+}
+@font-face{
+  font-family:'SEGA LOGO FONT';
+  font-style: normal;
+  font-weight: normal;
+  src: local('SEGA LOGO FONT'),url('SEGA.woff') format('woff');
+}
+
+.input{
+  display:flex;
+  width: 350px;
+  height: 40px;
+  border: none;
+  font-family: arial;
+  font-size: 15px;
+  margin: auto;
+  justify-content: center;
+  padding-left: 10px;
+  background: #c1d7d7;
+  border-radius: 2px;
+}
+
+.img-preview{
+ display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  margin: auto;
+  gap: 20px;
+  padding-top: 40px;
+  padding-bottom: 30px;
+  width: 85%;
+}
+
+img{
+  width: 160px;
+  height: 180px;
+}
+
+img:hover{
+  width: 200px;
+  height: 200px;
+}
+
+.img-items{
+   width:250px;
+   border-radius: 5px;
+   background:#8BF4CE;
+}
+.img-items:hover{
+  background: #FFA100;
+  width: 270px;
+  height: 330px;
+  cursor: pointer;
+}
+h3, h4{
+  text-align: center;
+}
+
+/* .flex-container div{
+  background: yellow;
+} */
