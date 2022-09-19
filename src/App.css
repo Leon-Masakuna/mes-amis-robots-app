@@ -1,7 +1,5 @@
 main {
   text-align: center;
-  /*vertical-align: center;
-  line-height: 100vh*/
 }
 
 .app-title{
@@ -14,8 +12,6 @@ main {
 
 body{
   background: linear-gradient(to left, #1C0054, #00817E );
-/*   background: linear-gradient( 90deg, #364cec 0%, rgba(142, 217, 235, 0.85) 99.84%); */
-  height: 30cm;
 }
 @font-face{
   font-family:'SEGA LOGO FONT';
@@ -29,12 +25,13 @@ body{
   width: 350px;
   height: 40px;
   border: none;
-  font-family: arial;
+  font-family: "arial";
   font-size: 15px;
   margin: auto;
   justify-content: center;
   padding-left: 10px;
-  background: #c1d7d7;
+  padding-right: 10px;
+  background:#92c4b2;
   border-radius: 2px;
 }
 
@@ -45,7 +42,7 @@ body{
   align-items: center;
   text-align: center;
   margin: auto;
-  gap: 20px;
+  gap: 15px;
   padding-top: 40px;
   padding-bottom: 30px;
   width: 85%;
@@ -56,17 +53,28 @@ img{
   height: 180px;
 }
 
-/* img:hover{
-  width: 200px;
-  height: 200px;
-} */
-
 .img-items{
    width:250px;
    border-radius: 5px;
    background:#8BF4CE;
    transition: transform 0.25s ease-out;
+   margin-bottom: 20px;
+   text-align: center;
+   margin: auto;
+   padding-bottom: 15px;
 }
+
+.img-items-details{
+   width:300px;
+   border-radius: 5px;
+   background:#8BF4CE;
+   transition: transform 0.25s ease-out;
+   margin-bottom: 20px;
+   text-align: center;
+   margin: auto;
+   padding-bottom: 10px;
+}
+
 .img-items:hover{
   background: #FFA100;
   transform: scale(1.05);
@@ -77,7 +85,17 @@ img{
 h3, h4{
   text-align: center;
 }
+.robot-link, .back-link{
+  text-decoration: none;
+  color: black;
+}
 
-/* .flex-container div{
-  background: yellow;
-} */
+h5{
+  background-color: #FFA100;
+  text-align: center;
+  margin: auto;
+  margin-top: 15px;
+  width: 100px;
+  border-radius: 5px;
+  padding: 5px 5px;
+}

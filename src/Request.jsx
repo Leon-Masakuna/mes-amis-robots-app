@@ -1,5 +1,7 @@
 import React, { useEffect, useState } from 'react'
 import './App.css'
+import Navigation from "./Navigation"
+import {Link} from "react-router-dom"
 
 function Request() {
   //state (état, données)
@@ -9,9 +11,7 @@ function Request() {
   //behavior (comportement, event)
   const fetchData = () => {
     fetch("https://jsonplaceholder.typicode.com/users")
-      .then(response => {
-        return response.json()
-      })
+      .then(response => response.json())
       .then(user => {
         setUsers(user);
       })
@@ -24,7 +24,7 @@ function Request() {
   //affichage (render)
   return (
     <div>
-      <input className="input" type="text" placeholder="Rechercher par nom"
+      <input className="input" type="search" placeholder="Rechercher par nom"
         onChange={(event) => setSearchTitle(event.target.value)} />
       {users.length > 0 && (
         <div className="img-preview">
@@ -35,11 +35,13 @@ function Request() {
               return value;
             }
           }).map(user => (
+            <Link className="robot-link" to={`/details/${user.id}`} >
             <div className="img-items" key={user.id} >
               <img src={`https://robohash.org/${user.id}`} />
               <h3>{user.name}</h3>
               <h4>{user.email}</h4>
             </div>
+            </Link>
           ))}
         </div>
       )}

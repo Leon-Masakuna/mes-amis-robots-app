@@ -1,6 +1,7 @@
 import React from 'react'
 import Request from "./Request"
-// import Search from "./Search"
+import RobotDetails from "./RobotDetails"
+import { Routes, Route } from "react-router-dom";
 import Title from "./Title"
 import "./App.css"
 
@@ -8,9 +9,10 @@ function App() {
   return (
     <>
       <Title />
-      <div>
-        <Request />
-      </div>
+          <Routes>
+            <Route path="/" element={<Request />} />
+            <Route path="/details/:id" element={<RobotDetails />} />
+          </Routes>
     </>
   )
 }
