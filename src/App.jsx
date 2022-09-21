@@ -9,10 +9,10 @@ function App() {
   return (
     <>
       <Title />
-          <Routes>
-            <Route path="/" element={<Request />} />
-            <Route path="/details/:id" element={<RobotDetails />} />
-          </Routes>
+        <Routes>
+          <Route path="/" element={<Request />} />
+          <Route path="/details/:id" element={<RobotDetails />} />
+        </Routes>
     </>
   )
 }

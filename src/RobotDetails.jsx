@@ -3,9 +3,9 @@ import {useState, useEffect} from "react"
 import {Link, useParams} from "react-router-dom"
 import './App.css'
 
-function RobotDetails (props){
+function RobotDetails (){
 
-  //const {id, name, userName, email, addressn} = props;
+  //const {id, name, username, email, addressn} = props;
   const [users, setUsers] = useState([]);
   const {id} = useParams();
 
@@ -18,21 +18,25 @@ function RobotDetails (props){
           setUsers(item)
         } 
       })             
-      })
+    })
   }
 
   useEffect(() => {
     fetchDataDetails()
   }, [])
 
-  console.log(users)
+  //console.log(users)
   
   return(
     <>
       <div className="img-items-details" key={users.id} >
         <img src={`https://robohash.org/${users.id}`} />
         <h4>{users.name}</h4>
-        <h4>{users?.address?.street}, {users?.address?.suite}, {users?.address?.city}</h4>
+        <h4>
+          {users?.address?.street}, 
+          {users?.address?.suite}, 
+          {users?.address?.city}
+        </h4>
         <h4>{users.email}</h4>
         <h4>{users.website}</h4>
       </div>
