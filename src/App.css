@@ -2,26 +2,26 @@ main {
   text-align: center;
 }
 
-.app-title{
+.app-title {
   text-align: center;
   font-family: "SEGA LOGO FONT";
-  color:aqua;
+  color: aqua;
   font-size: 48px;
   font-weight: 400;
 }
 
-body{
-  background: linear-gradient(to left, #1C0054, #00817E );
+body {
+  background: linear-gradient(to left, #1c0054, #00817e);
 }
-@font-face{
-  font-family:'SEGA LOGO FONT';
+@font-face {
+  font-family: "SEGA LOGO FONT";
   font-style: normal;
   font-weight: normal;
-  src: local('SEGA LOGO FONT'),url('SEGA.woff') format('woff');
+  src: local("SEGA LOGO FONT"), url("SEGA.woff") format("woff");
 }
 
-.input{
-  display:flex;
+.input {
+  display: flex;
   width: 350px;
   height: 40px;
   border: none;
@@ -31,11 +31,12 @@ body{
   justify-content: center;
   padding-left: 10px;
   padding-right: 10px;
-  background:#92c4b2;
+  background: #92c4b2;
   border-radius: 2px;
+  outline: none;
 }
 
-.img-preview{
+.img-preview {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
@@ -48,50 +49,52 @@ body{
   width: 85%;
 }
 
-img{
+img {
   width: 160px;
   height: 180px;
 }
 
-.img-items{
-   width:250px;
-   border-radius: 5px;
-   background:#8BF4CE;
-   transition: transform 0.25s ease-out;
-   margin-bottom: 20px;
-   text-align: center;
-   margin: auto;
-   padding-bottom: 15px;
+.img-items {
+  width: 250px;
+  border-radius: 5px;
+  background: #8bf4ce;
+  transition: transform 0.25s ease-out;
+  margin-bottom: 20px;
+  text-align: center;
+  margin: auto;
+  padding-bottom: 15px;
 }
 
-.img-items-details{
-   width:300px;
-   border-radius: 5px;
-   background:#8BF4CE;
-   transition: transform 0.25s ease-out;
-   margin-bottom: 20px;
-   text-align: center;
-   margin: auto;
-   padding-bottom: 10px;
+.img-items-details {
+  width: 300px;
+  border-radius: 5px;
+  background: #8bf4ce;
+  transition: transform 0.25s ease-out;
+  margin-bottom: 20px;
+  text-align: center;
+  margin: auto;
+  padding-bottom: 10px;
 }
 
-.img-items:hover{
-  background: #FFA100;
+.img-items:hover {
+  background: #ffa100;
   transform: scale(1.05);
   object-fit: cover;
   text-align: center;
   cursor: pointer;
 }
-h3, h4{
+h3,
+h4 {
   text-align: center;
 }
-.robot-link, .back-link{
+.robot-link,
+.back-link {
   text-decoration: none;
   color: black;
 }
 
-h5{
-  background-color: #FFA100;
+h5 {
+  background-color: #ffa100;
   text-align: center;
   margin: auto;
   margin-top: 15px;
