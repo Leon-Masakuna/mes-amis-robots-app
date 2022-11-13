@@ -22,7 +22,7 @@ body {
 
 .input {
   display: flex;
-  width: 350px;
+  width: 150px;
   height: 40px;
   border: none;
   font-family: "arial";
